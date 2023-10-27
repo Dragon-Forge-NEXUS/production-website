@@ -1,0 +1,32 @@
+---
+export interface Props {
+	title: string;
+	description: string;
+	page: string;
+}
+
+const { title, description, page } = Astro.props;
+const full_title = title + ' | DragonForgeNEXUS'
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+
+// Imports
+import Footer from '../components/Footer.astro';
+import Head from '../components/head.astro'
+---
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+	<head>
+		<Head title={full_title} description={description} icon="/imgs/Logos/Square/Solid/250/PNG/DRAGONFORGENEXUS.png" banner="/imgs/Logos/Banner/Solid/1000x500/PNG/DRAGONFORGENEXUS-solid-banner.png" page={canonicalURL}/>
+	</head>
+	<body>
+		<slot />
+		<!-- <Footer /> -->
+	</body>
+</html>
+<style>
+	html {
+  	background-size: 100% 100%;
+  	background-position: 0px 0px,0px 0px,0px 0px,0px 0px,0px 0px;
+  	background-image: radial-gradient(49% 81% at 45% 47%, #3f6212 0%, #073AFF00 100%),radial-gradient(113% 91% at 17% -2%, #86198f 1%, #FF000000 99%),radial-gradient(142% 91% at 83% 7%, #92400e 1%, #FF000000 99%),	radial-gradient(142% 91% at -6% 74%, #065f46 0%, #FF000000 99%),radial-gradient(142% 91% at 111% 84%, #5b21b6 0%, #AC23D7FF 100%);
+	}
+</style>
