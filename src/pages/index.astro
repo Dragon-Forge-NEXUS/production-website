@@ -49,10 +49,10 @@ import Layout from '../layouts/main.astro';
     const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
     const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
 
-    document.getElementById('days').style.setProperty('--value', days);
-    document.getElementById('hours')?.style.setProperty('--value', hours);
-    document.getElementById('min')?.style.setProperty('--value', minutes);
-    document.getElementById('sec')?.style.setProperty('--value', seconds);
+    document.getElementById('days')?.style.setProperty('--value', String(days));
+    document.getElementById('hours')?.style.setProperty('--value', String(hours));
+    document.getElementById('min')?.style.setProperty('--value', String(minutes));
+    document.getElementById('sec')?.style.setProperty('--value', String(seconds));
   }
 
   // Update the countdown every second
@@ -60,4 +60,4 @@ import Layout from '../layouts/main.astro';
 
   // Initial call to set the initial values
   updateCountdown();
-</scri
+</script>
