@@ -3,61 +3,66 @@
 import Layout from '../layouts/main.astro';
 ---
 
-<Layout title="Home" description="Coming Soon!" page="/">
-	<div class="flex items-center h-screen">
-		<div class="m-auto">
-			<div class="grid grid-flow-col gap-5 text-center auto-cols-max scale-[2.5]">
-				<div class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
-					<span class="countdown font-mono text-5xl">
-						<span style="--value:31;" id="days"></span>
-					</span>
-					days
-				</div> 
-				<div class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
-					<span class="countdown font-mono text-5xl">
-						<span style="--value:0;" id="hours"></span>
-					</span>
-					hours
-				</div> 
-				<div class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
-					<span class="countdown font-mono text-5xl">
-						<span style="--value:0;" id="min"></span>
-					</span>
-					min
-				</div> 
-				<div class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
-					<span class="countdown font-mono text-5xl">
-						<span style="--value:0;" id="sec"></span>
-					</span>
-					sec
-				</div>
-			</div>
+<Layout title="Home" description="DRAGONFORGENEXUS is a group of 'entities' that have Minecraft modpacks, videos, code refrences, and more!" page="/">
+	<div class="text-center text-4xl py-1 h-auto bg-lime-800 drop-shadow-lg">
+		DRAGONFORGENEXUS
+	</div>
+	<!-- row 1 -->
+	<div class="container mx-auto px-4 text-center pt-3 min-h-screen">
+		<div class="transition ease-in-out delay-150 hover:scale-105 bg-slate-800 text-slate-400 hover:bg-sky-800 duration-300 h-auto px-8 rounded-lg drop-shadow-lg">
+			<div class="text-center text-2xl">DragonForgeMedia</div>
+			<div>DragonForgeMedia is a small media studio that makes youtube videos, twitch streams and more social media based stuff.</div>
+			<br />
+			<div class="rounded-full bg-teal-400 mx-28 text-center text-slate-800 transition ease-in-out delay-150 hover:bg-teal-800 duration-300"><a href="/DragonForgeMedia"><h2>Go To</h2></a></div>
+			<br />
+		</div>
+		<br />
+		<div class="transition ease-in-out delay-150 hover:scale-105 bg-slate-800 text-slate-400 hover:bg-red-800 duration-300 h-auto px-8 rounded-lg drop-shadow-lg">
+			<div class="text-center text-2xl">DragonForgeCode</div>
+			<div>DragonForgeCode has multible pages including: Code Tutorials, Code Librarys, And more!</div>
+			<br />
+			<div class="rounded-full bg-teal-400 mx-28 text-center text-slate-800 transition ease-in-out delay-150 hover:bg-red-900 duration-300"><a><h2>Coming soon</h2></a></div>
+			<br />
+		</div>
+		<!--<br />
+		<div class="transition ease-in-out delay-150 hover:scale-105 bg-slate-800 text-slate-400 hover:bg-emerald-800 duration-300 h-auto px-8 rounded-lg drop-shadow-lg">
+			<div class="text-center text-2xl">DragonForgeNews</div>
+			<div>DragonForgeNews is an article based news for gaming, tech, and media news! this does <strong>NOT</strong> include politics.</div>
+			<br />
+			<div class="rounded-full bg-teal-400 mx-28 text-center  text-slate-800 transition ease-in-out delay-150  hover:bg-red-900 duration-300"><a><h2>Coming soon</h2></a></div>
+			<br />
+		</div>
+		<br />
+		<div class="transition ease-in-out delay-150 hover:scale-105 bg-slate-800 text-slate-400 hover:bg-amber-800 duration-300 h-auto px-8 rounded-lg drop-shadow-lg">
+			<div class="text-center text-2xl">DragonForgeNetwork</div>
+			<div>DrargonForgeNetwork is a work in progress Minecraft Network.</div>
+			<br />
+			<div class="rounded-full bg-teal-400 mx-28 text-center text-slate-800 transition ease-in-out delay-150 hover:bg-red-900 duration-300"><a><h2>Coming soon</h2></a></div>
+			<br />
+		</div>-->
+		<br />
+		<div class="transition ease-in-out delay-150 hover:scale-105 bg-slate-800 text-slate-400 hover:bg-fuchsia-800 duration-300 h-auto px-8 rounded-lg drop-shadow-lg">
+			<div class="text-center text-2xl">DragonForgeGaming</div>
+			<div>DragonForgeGaming is a game review and news (same gaming stories as Future DragonForgeNews) site.</div>
+			<br />
+			<div class="rounded-full bg-teal-400 mx-28 text-center text-slate-800 transition ease-in-out delay-150 hover:bg-red-900 duration-300"><a><h2>Coming soon</h2></a></div>
+			<br />
+		</div>
+		<br />
+		<div class="transition ease-in-out delay-150 hover:scale-105 bg-slate-800 text-slate-400 hover:bg-lime-800 duration-300 h-auto px-8 rounded-lg drop-shadow-lg">
+			<div class="text-center text-2xl">DragonForgeNEXUS Blog</div>
+			<br />
+			<div class="rounded-full bg-teal-400 mx-28 text-center text-slate-800 transition ease-in-out delay-150 hover:bg-teal-800 duration-300"><a href="https://blog.dragonforgenexus.xyz/"><h2>Go To</h2></a></div>
+			<br />
+		</div>
+		<br />
+		<div class="transition ease-in-out delay-150 hover:scale-105 bg-slate-800 text-slate-400 hover:bg-lime-800 duration-300 h-auto px-8 rounded-lg drop-shadow-lg">
+			<div class="text-center text-2xl">DragonForgeNEXUS' Partners</div>
+			<div>Dragon Forge NEXUS' Partnerships.</div>
+			<br />
+			<div class="rounded-full bg-teal-400 mx-28 text-center text-slate-800 transition ease-in-out delay-150 hover:bg-teal-800 duration-300"><a href="/Partners"><h2>Go To</h2></a></div>
+			<br />
 		</div>
 	</div>
+	<br />
 </Layout>
-<script>
-  // Set the target date to 11/4/2023 at 5:00 PM MDT
-  const targetDate = new Date('2023-11-04T17:00:00-06:00').getTime();
-
-  // Function to update the countdown
-  function updateCountdown() {
-    const currentDate = new Date().getTime();
-    const timeRemaining = targetDate - currentDate;
-
-    const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
-
-    document.getElementById('days')?.style.setProperty('--value', String(days));
-    document.getElementById('hours')?.style.setProperty('--value', String(hours));
-    document.getElementById('min')?.style.setProperty('--value', String(minutes));
-    document.getElementById('sec')?.style.setProperty('--value', String(seconds));
-  }
-
-  // Update the countdown every second
-  setInterval(updateCountdown, 1000);
-
-  // Initial call to set the initial values
-  updateCountdown();
-</script>

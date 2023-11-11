@@ -6,5 +6,11 @@ import mdx from "@astrojs/mdx";
 // https://astro.build/config
 export default defineConfig({
   site: 'https://dragonforgenexus.xyz',
-  integrations: [sitemap(), tailwind(), mdx()]
+  integrations: [
+    sitemap({
+      filter: (page) =>
+        page !== 'https://dragonforgenexus.xyz/DragonForgeGaming' &&
+        page !== 'https://dragonforgenexus.xyz/DRAGONFORGENETWORK',
+      customPages: ['https://blog.dragonforgenexus.xyz'],
+    }), tailwind(), mdx()]
 });
