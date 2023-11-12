@@ -7,10 +7,5 @@ import mdx from "@astrojs/mdx";
 export default defineConfig({
   site: 'https://dragonforgenexus.xyz',
   integrations: [
-    sitemap({
-      filter: (page) =>
-        page !== 'https://dragonforgenexus.xyz/DragonForgeGaming' &&
-        page !== 'https://dragonforgenexus.xyz/DRAGONFORGENETWORK',
-      customPages: ['https://blog.dragonforgenexus.xyz'],
-    }), tailwind(), mdx()]
+    sitemap(), tailwind(), mdx()]
 });
