@@ -15,7 +15,7 @@
     "@astrojs/sitemap": "^3.0.3",
     "@astrojs/tailwind": "^5.0.2",
     "@babel/traverse": "^7.23.3",
-    "astro": "^3.5.3",
+    "astro": "^3.6.0",
     "astro-webmanifest": "^1.0.0",
     "postcss": "^8.4.31"
   },
