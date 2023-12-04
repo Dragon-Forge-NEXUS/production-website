@@ -8,13 +8,16 @@ import webmanifest from "astro-webmanifest";
 // https://astro.build/config
 export default defineConfig({
   site: 'https://dragonforgenexus.xyz',
+  redirects: {
+    '/DragonForgeMedia/DragonForgeGaming': '/Partners/FYTS'
+  },
   integrations: [
   // ...
   sitemap({
     filter: page => page !== 'https://dragonforgenexus.xyz/DragonForgeGaming' && page !== 'https://dragonforgenexus.xyz/DRAGONFORGENETWORK'
   }), tailwind(), mdx(), webmanifest({
     name: 'DragonForgeNEXUS',
-    icon: '/public/imgs/Logos/Square/Solid/SVG/DRAGONFORGENEXUS.svg',
+    icon: '/imgs/Logos/Square/Solid/SVG/DRAGONFORGENEXUS.svg',
     short_name: 'DFN',
     description: 'DragonForgeNEXUS',
     start_url: '/',
