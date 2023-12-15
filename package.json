@@ -21,6 +21,6 @@
     "postcss": "^8.4.31"
   },
   "devDependencies": {
-    "daisyui": "^4.4.19"
+    "daisyui": "^4.4.20"
   }
 }
